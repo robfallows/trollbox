@@ -1,0 +1,13 @@
+<head>
+  <title>Alice</title>
+</head>
+
+<body>
+  {{> hello}}
+</body>
+
+<template name="hello">
+  {{#each myHelper}}
+    <div>{{name}}: {{message}}</div>
+  {{/each}}
+</template>
